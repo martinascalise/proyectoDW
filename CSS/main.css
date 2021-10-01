@@ -1,0 +1,255 @@
+ul{
+    list-style-type: none;
+}
+ol{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: seashell;
+    font-weight: 200;
+}
+/*header*/
+.logo{
+    float: left;
+}
+header{
+    background-color: rgb(202, 161, 138);
+    width: 100%;
+    height: 2.5rem;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+nav ul li{
+    display:inline-block;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+}
+nav ul li a:hover{
+    background-color: seashell;
+    color:rgb(43, 14, 14) ;
+    border-radius: 2px;
+    padding: 0.3rem;
+}
+.logo__img{
+    width: 42px;
+    height: 2.5rem;
+}
+/*cuerpo-formatos generales*/
+.main{
+    background-color: rgb(255, 235, 204);
+    color:rgb(43, 14, 14);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+.main{
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+/*Index*/
+iframe{
+    width: 100%;
+}
+.videoInicio{
+    border-style: solid;
+    border-top-color: rgb(202, 161, 138);
+    border-bottom-color: rgb(202, 161, 138);
+    border-left: transparent;
+    border-right: transparent;
+}
+.quienesSomos{
+    background-color:rgb(255, 234, 223);
+    border-style: solid;
+    border-top-color: rgb(202, 161, 138);
+    border-bottom-color: rgb(202, 161, 138);
+    border-left: transparent;
+    border-right: transparent;
+}
+.quienesSomos1{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.quienesSomos2{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.quienesSomos3{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgIndex{
+    width: 15rem;
+}
+/*nuestros vinos*/
+#gridVinos{
+    width: 88%;
+    display: grid;
+    grid-template-areas: 
+    "tipoUva notas maridajes"
+    "tipoUva1 notas1 maridajes1"
+    "tipoUva2 notas2 maridajes2"
+    "tipoUva3 notas3 maridajes3"
+    "tipoUva4 notas4 maridajes4";
+    grid-template-rows: 8% 20% 20% 20% 20%;
+    grid-template-columns: 20% 40% 40%;
+    grid-row-gap: 0.5rem;
+    background-color:rgb(77, 60, 50);
+}
+.gridTitle{
+    color: cornsilk;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    padding: 2rem 0;
+}
+.gridItem{
+    background-color: cornsilk;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 125%;
+}
+#tipoUva{
+    grid-area: tipoUva;
+}
+#notas{
+    grid-area: notas;
+}
+#maridajes{
+    grid-area: maridajes;
+}
+#tipoUva1{
+    grid-area: tipoUva1;
+}
+#notas1{
+    grid-area: notas1;
+}
+#maridajes1{
+    grid-area: maridajes1;
+}
+#tipoUva2{
+    grid-area: tipoUva2;
+}
+#notas2{
+    grid-area: notas2;
+}
+#maridajes2{
+    grid-area: maridajes2;
+}
+#tipoUva3{
+    grid-area: tipoUva3;
+}
+#notas3{
+    grid-area: notas3;
+}
+#maridajes3{
+    grid-area: maridajes3;
+}
+#tipoUva4{
+    grid-area: tipoUva4;
+}
+#notas4{
+    grid-area: notas4;
+}
+#maridajes4{
+    grid-area: maridajes4;
+}
+/*bodegas*/
+.imgGaleria{
+    border-style: solid;
+    border-color: white;
+}
+/*Notas de Interes*/
+.mainNotas{
+    background-color: rgb(255, 235, 204);
+    margin-top: 0.5rem;
+}
+#notasDeInteres{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "nota1 nota2 nota2"
+    "nota1 nota3 nota3";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 40% 20% 20%;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+#notaDeInteres1{
+    grid-area: nota1;
+    padding: 1rem;
+    border-style: solid;
+    border-color: transparent;
+    background-color: white;
+    box-shadow: 5px 10px 8px rgb(202, 161, 138);
+}
+#notaDeInteres2{
+    grid-area: nota2;
+    padding: 1rem;
+    border-style: solid;
+    border-color:transparent;
+    background-color: white;
+    box-shadow: 5px 10px 8px rgb(202, 161, 138);
+}
+#notaDeInteres3{
+    grid-area: nota3;
+    padding: 1rem;
+    border-style: solid;
+    border-color: transparent;
+    background-color: white;
+    box-shadow: 5px 10px 8px rgb(202, 161, 138);
+}
+.verMas{
+    border: none;
+    background-color: rgb(202, 161, 138);
+    padding: 1rem;
+    color: white;
+}
+/*contacto*/
+.formulario{
+    text-align:center;
+    line-height: 2rem;
+}
+.contactoButton{
+    border-radius:0%;
+    border-style: solid;
+    border-color: rgb(202, 161, 138);
+    background-color: seashell;
+}
+/*footer*/
+footer{
+    background-color:rgb(107, 85, 72);
+    color: rgb(202, 161, 138);
+    text-align: center;
+}
+.redesButton{
+    background-color:rgb(107, 85, 72);
+    border: none;
+    color:seashell;
+    font-weight: bold;
+    padding: 0.8rem;
+}
+.redesButton:hover{
+    background-color:seashell;
+    color: rgb(107, 85, 72);
+    padding: 0.8rem;
+    border-radius: 2px;
+}

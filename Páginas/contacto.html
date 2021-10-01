@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class=logo href="../index.html"> 
+                <img class= logo__img src="../Images/Logo (1).png" alt="">
+            </a>
+            <ul class=menu>
+                <li>
+                    <a href="../index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="/Páginas/nuestrosVinos.html"> Nuestros Vinos</a>
+                </li>
+                <li>
+                    <a href="/Páginas/bodegas.html"> Bodegas </a>
+                </li>
+                <li>
+                    <a href="/Páginas/notasDeInteres.html">Notas de Interes</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    <main class=main>
+        <form action="/" method="GET" class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="email">Email:</label>
+            <input type="email" id="correo" name="correo">
+            <div class:asunto>Asunto 
+                <select name="asunto">
+            </div>
+                <option value="consulta">Consultas</option>
+                <option value="visita">Visita nuestras bodegas</option>
+                <option value="visitaDegustacion">Visita y degustación de vinos</option>
+                <option value="compras">Compras</option>
+            </select>
+            <div class=mensaje>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="50" rows="5"></textarea>
+            </div>
+            <div class=check >¿Desea recibir novedades sobre nuestros vinos?
+                <input type="checkbox" name="novedades" value="si">
+            </div>
+            <input class=contactoButton type="reset" value="Limpiar">
+            <input class=contactoButton type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <p>Creado por: Martina Scalise</p> 
+        <button class="redesButton">Redes Sociales</button>
+    </footer>
+</body>
+</html>
